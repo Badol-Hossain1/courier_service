@@ -1,7 +1,7 @@
 import logo from '../../../assets/Layer_1.png'
 const Merchant = () => {
     return (
-        <div>
+        <div data-aos="zoom-in">
             <div className="hero grid p-10  md:grid-cols-3 bg-[#03373D]">
                 <div className="col-span-2">
                     <h1 className="font-bold mb-4 text-4xl">

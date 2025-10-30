@@ -91,7 +91,7 @@ const FeatureCard = ({ title, description, icon }) => (
 
 const OurService = () => {
     return (
-        <div>
+        <div data-aos="zoom-in">
             <div className="min-h-screen bg-gray-50 font-sans p-4 sm:p-8">
                 <div className=" ">
                     <header className="text-center mb-12">
