@@ -74,7 +74,7 @@ const Services = () => {
                     {ServicesData.map((service, index) => (
                         <div
                             key={index}
-                            className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+                            className="bg-white ease-in-out hover:bg-yellow-200 rounded-2xl shadow-md p-6 hover:shadow-lg transition-colors  duration-300"
                         >
                             <div className="flex justify-center ">
                                 <img className="w-20 " src={logo} alt="" />
