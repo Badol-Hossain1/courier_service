@@ -66,7 +66,7 @@ const Services = () => {
     return (
         <section className="py-12 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-3xl font-bold text-center text-gray-900 mb-10">
+                <h2 className="text-3xl font-bold text-center text-primary mb-10">
                     Our Services
                 </h2>
 
@@ -79,7 +79,7 @@ const Services = () => {
                             <div className="flex justify-center ">
                                 <img className="w-20 " src={logo} alt="" />
                             </div>
-                            <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                            <h3 className="text-xl font-semibold text-primary mb-3">
                                 {service.title}
                             </h3>
                             <p className="text-gray-600 text-sm leading-relaxed">

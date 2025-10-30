@@ -44,8 +44,8 @@ const logos = [
 
 const ClientLogo = () => {
     return (
-        <div>
-            <h2 className="text-center font-bold text-2xl mb-4 mt-4">
+        <div className='bg-white'>
+            <h2 className="text-center font-bold text-2xl text-primary mb-4 ">
                 We've helped thousands of sales teams
             </h2>
             <Marquee speed={50} gap={10}>

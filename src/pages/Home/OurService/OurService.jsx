@@ -95,7 +95,7 @@ const OurService = () => {
             <div className="min-h-screen bg-gray-50 font-sans p-4 sm:p-8">
                 <div className=" ">
                     <header className="text-center mb-12">
-                        <h1 className="text-3xl sm:text-4xl font-black text-gray-900">
+                        <h1 className="text-3xl sm:text-4xl font-black text-primary">
                             Our Core Services
                         </h1>
                         <p className="mt-2 text-lg text-gray-500 max-w-2xl mx-auto">

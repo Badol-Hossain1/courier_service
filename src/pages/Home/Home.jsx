@@ -1,5 +1,6 @@
 import Banner from './banner/Banner'
 import ClientLogo from './ClientLogo/ClientLogo'
+import Merchant from './Merchant/Merchant'
 import OurService from './OurService/OurService'
 import Services from './Services/Services'
 
@@ -10,6 +11,7 @@ const Home = () => {
             <Services />
             <ClientLogo />
             <OurService />
+            <Merchant />
         </div>
     )
 }
