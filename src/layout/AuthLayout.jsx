@@ -6,7 +6,7 @@ const AuthLayout = () => {
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
-                <div className="hero-content  flex-col lg:flex-row-reverse">
+                <div className="hero-content items-center  flex-col lg:flex-row-reverse">
                
                     <div className='flex-1'>
                     <Lottie animationData={loginLogo} />

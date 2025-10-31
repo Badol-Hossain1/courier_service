@@ -1,5 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router'
+import useAuth from '../../../hooks/useAuth'
+import GoogleLogin from '../googleLogin/GoogleLogin'
 
 const Register = () => {
     const {
@@ -8,12 +10,21 @@ const Register = () => {
         watch,
         formState: { errors },
     } = useForm()
+
+    const { createUser } = useAuth()
     const onSubmit = (data) => {
-        console.log(data)
+        const { email, password } = data
+        createUser(email, password)
+            .then((result) => {
+                console.log('🚀 ~ onSubmit ~ result:', result)
+            })
+            .catch((error) => {
+                console.log('🚀 ~ onSubmit ~ error:', error)
+            })
     }
 
     const password = watch('password')
-    console.log('🚀 ~ Register ~ password:', password)
+
     return (
         <>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -42,7 +53,7 @@ const Register = () => {
                                         value === password ||
                                         'Passwords do not match',
                                 })}
-                                type="Cpassword"
+                                type="password"
                                 className="input"
                                 placeholder="Confirm Password"
                             />
@@ -58,13 +69,17 @@ const Register = () => {
                                     className="text-white font-bold capitalize"
                                 >
                                     already have an account{' '}
+                                    <span className="underline text-red-700">
+                                        Login
+                                    </span>
                                 </Link>
                             </div>
-                            <button className="btn btn-neutral mt-4">
+                            <button className="btn btn-primary mt-4">
                                 Sign Up
                             </button>
                         </fieldset>
                     </form>
+                    <GoogleLogin />
                 </div>
             </div>
         </>
