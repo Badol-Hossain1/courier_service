@@ -11,6 +11,9 @@ const Navbar = () => {
             <li>
                 <NavLink to="/about">About</NavLink>
             </li>
+            <li>
+                <NavLink to="/map">Find Us</NavLink>
+            </li>
         </>
     )
     return (
@@ -45,12 +48,10 @@ const Navbar = () => {
                         {NavItems}
                     </ul>
                 </div>
-               <Logo width='w-10' height='h-10'/>
+                <Logo width="w-10" height="h-10" />
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                     {NavItems}
-                </ul>
+                <ul className="menu menu-horizontal px-1">{NavItems}</ul>
             </div>
             <div className="navbar-end">
                 <a className="btn">Button</a>

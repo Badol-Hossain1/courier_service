@@ -5,6 +5,7 @@ import RootLayout from '../layout/RootLayout'
 import AuthLayout from '../layout/AuthLayout'
 import Login from '../pages/Auth/login/Login'
 import Register from '../pages/Auth/register/Register'
+import Map from '../pages/Map/Map'
 
 export const router = createBrowserRouter([
     {
@@ -15,6 +16,11 @@ export const router = createBrowserRouter([
                 index: true,
                 Component: Home,
             },
+            {
+                path:'map',
+                Component:Map,
+                loader:()=> fetch('./ServiceCenter.json')
+            }
         ],
     },
     {
